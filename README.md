@@ -7,7 +7,7 @@ typecho主题pic魔改，[示例页面](https://wallpaper.fordes.top/)
 
 ### 说明
 
-- 主题似乎最开始移植自wordpress, 原作为 @[国服第一盖伦](https://p.liangxingjian.com)，遗憾的是其主页已无法访问
+- 主题似乎最开始移植自wordpress, ~~原作为 @[国服第一盖伦](https://p.liangxingjian.com)，遗憾的是其主页已无法访问~~ 原作已经不可考。
 
 - 狗尾续貂随意改改，壁纸相册化，不支持显示博文
 
@@ -30,5 +30,4 @@ typecho主题pic魔改，[示例页面](https://wallpaper.fordes.top/)
 
 - [x] 移除 二级页面
 - [x] 改进 首页样式，添加 灯箱、标签等
-- [ ] 图片懒加载
-- [ ] 其他想法待构思
+- [x] 图片懒加载

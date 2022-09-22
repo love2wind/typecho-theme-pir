@@ -31,10 +31,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                     <div class="portfolio portfolio-with-title portfolio-masonry blog-m col-4 gutter ">
                         <?php if($this->have()):?>
 						<?php while($this->next()): ?>
-						<?php foreach(getPostImg($this) as $item){?>
+
                         <div class="portfolio-item">
                             <div class="thumb" >
-                                <img class="img-item" data-fancybox="gallery" data-src="<?php echo $item?>" src="<?php echo $item?>" alt=""></img>
+                                <img class="img-item" data-fancybox="gallery" data-src="<?php echo $this->fields->original?>" src="<?php echo $this->fields->cover;?>" alt=""></img>
                                 <div class="widget-tags">
                                     <?php if(  count($this->tags) == 0 ): ?>
                                     <?php $this->category(' ', true, ''); ?>
@@ -43,8 +43,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                                     <?php endif; ?>
                                 </div>
                             </div>
+                            
+                            
                         </div>
-                        <?php } ?>       
+     
 						<?php endwhile; ?>
 						<?php endif; ?>
                     </div>
