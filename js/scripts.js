@@ -36,9 +36,7 @@
     }
 
     function lazyloaded() {
-        if ($('.ajaxloadpost')) {
-            $portfolio.masonry('layout')
-        }
+        $portfolio.masonry('layout');
     }
 
     $window.on("load", function () {

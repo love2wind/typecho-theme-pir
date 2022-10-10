@@ -34,7 +34,7 @@ $this->need('header.php'); ?>
                     <?php while ($this->next()) : ?>
                         <div class="portfolio-item">
                             <div class="thumb">
-                                <img class="img-item" data-fancybox="gallery" data-src="<?php echo $this->fields->original ?>" src="<?php echo $this->fields->cover; ?>" alt=""></img>
+                                <img class="img-item lazyload" data-fancybox="gallery" data-src="<?php echo $this->fields->original ?>" src="<?php $this->options->themeUrl('./img/loading.gif'); ?>" alt=""></img>
                                 <div class="widget-tags">
                                     <?php if ($this->options->mode) : ?>
                                         <a href="<?php $this->permalink(); ?>">
