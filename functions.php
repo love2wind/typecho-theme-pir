@@ -4,12 +4,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form)
 {
     $form->addInput(new Typecho_Widget_Helper_Form_Element_Text('icp', NULL, NULL, _t('ICP备案号'), _t('有就写没有就不写不可以乱写༼ つ ◕_◕ ༽つ')));
+    $form->addInput(new Typecho_Widget_Helper_Form_Element_Radio('mode', array(false => '相册模式', true => '图集模式'), false, '显示模式', '相册模式: 不显示博文，一篇文章代表一张图片<br>图集模式: 显示博文，可在博文中插入更多文字和图片'));
 }
 
 function themeFields($layout)
 {
-    $layout->addItem(new Typecho_Widget_Helper_Form_Element_Text('original', NULL, NULL, _t('原图地址'), _t('用CDN啊，再不济上个图床~')));
-    $layout->addItem(new Typecho_Widget_Helper_Form_Element_Text('cover', NULL, NULL, _t('略缩图地址'), _t('用于封面，小图提高加载速度')));
+    $layout->addItem(new Typecho_Widget_Helper_Form_Element_Text('original', NULL, NULL, _t('原图地址（图集模式下表现为封面）'), _t('用CDN啊，再不济上个图床~')));
 }
 
 
@@ -127,7 +127,7 @@ function showThumb($obj, $link = false)
         $thumb = $matches[1][0];  //文章内容中抓到了图片 输出链接
     }
 
- 
+
     //空的话输出默认随机图
     $thumb = empty($thumb) ? $options->themeUrl . '/img/' . rand(1, 14) . '.jpg' : $thumb;
 

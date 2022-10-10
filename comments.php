@@ -12,7 +12,7 @@
         $avatar = $host . $url . $hash . '?s=' . $size . '&r=' . $rating . '&d=';
         ?>
         <a class="pull-left" href="#">
-            <img class="media-object comment-avatar" src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="50" height="50">
+            <img class="media-object comment-avatar lazyload" src="<?php Helper::options()->themeUrl('./img/avatar.png'); ?>" onerror="javascript:this.src='<?php Helper::options()->themeUrl('./img/avatar.png'); ?>';" data-src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="50" height="50">
         </a>
         <div class="media-body">
 

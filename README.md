@@ -7,9 +7,9 @@ typecho主题pic魔改，[示例页面](https://wallpaper.fordes.top/)
 
 ### 说明
 
-- 主题似乎最开始移植自wordpress, ~~原作为 @[国服第一盖伦](https://p.liangxingjian.com)，遗憾的是其主页已无法访问~~ 原作已经不可考。
+- 主题似乎最开始移植自wordpress, ~~原作为 @[国服第一盖伦](https://p.liangxingjian.com)，遗憾的是其主页已无法访问~~ 原作为 [massive](https://themeforest.net/item/massive-responsive-multipurpose-html5-template/12503639)。
 
-- 狗尾续貂随意改改，壁纸相册化，不支持显示博文
+- 狗尾续貂随意改改，壁纸相册化，~~不支持显示博文~~
 
 
 
@@ -17,7 +17,7 @@ typecho主题pic魔改，[示例页面](https://wallpaper.fordes.top/)
 
 - 克隆项目后将主题文件夹上传至typecho目录 **/usr/themes/** 路径下，到后台选择启用；
 
-- 修改后为完全壁纸或相册模板，不支持显示博文
+- 修改后为完全壁纸或相册模板，~~不支持显示博文~~
 
 - 新建文章并将图片插入正文即可，支持任意数量，暂不支持附件形式
 
